@@ -1,1 +1,1 @@
-discbot
+bot_2
