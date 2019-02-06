@@ -1,6 +1,6 @@
 const Commando = require('discord.js-commando');
 const bot = new Commando.Client({ commandPrefix: '?', owner: '204523814216925184', });
-const TOKEN = 'NTM5NzIyNzQxNTExNjE4NTgw.DzGrLg.J7khGQ4dlTFrJ85Hyjv17IVFIf4';
+const TOKEN = '{Your token here}';// NEVER SHOW ANYONE YOUR TOKEN
 const discord = require('discord.js');
 bot.login(TOKEN);
 
@@ -20,8 +20,8 @@ global.team2Name = [0];
 
 bot.on("guildMemberAdd", function(member)
 {
-    message.member.send("Welcome to the server!")
-    message.member.send("For commands type: !help") 
+    message.member.send("Welcome to the server!");
+    message.member.send("For commands type: !help"); 
 
     let memberRole = member.guild.roles.find("name", "Member");
     member.addRole(memberRole);
@@ -32,7 +32,7 @@ global.servers = {};
 bot.on('message', function(message){
     if(message.content ==+ 'Hello')
     {
-        message.channel.sendMessage('Hallo '+ message.author + ', Hoe gaat het?')
+        message.channel.sendMessage('Hallo '+ message.author + ', Hoe gaat het?');
 
     }
     else if(message.content == "welk team hebben we")
@@ -43,7 +43,7 @@ bot.on('message', function(message){
 
 bot.on('ready', function(){
     console.log("Ready");
-    bot.user.setActivity('Music, which GAP-BOT isnt capable of doing', {type: 'PLAYING'})
+    bot.user.setActivity('GAP-BOT is better then me', {type: 'PLAYING'})
     .then(presence => console.log(`Activity set to ${presence.game ? presence.game.name : 'none'}`))
     bot.user.setPresence(status = 'idle' )
 })

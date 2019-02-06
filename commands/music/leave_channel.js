@@ -7,7 +7,7 @@ class LeaveChannelCommand extends commando.Command
         super(client,{
             name: 'leave',
             group: 'music',
-            memberName: 'join',
+            memberName: 'leave',
             description: 'leaved een channel'
         });
     }

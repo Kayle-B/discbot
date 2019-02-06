@@ -15,13 +15,13 @@ class ServerInfoCommand extends commando.Command
     async run(message, args)
     {
         var Server_Info = new discord.RichEmbed()
+            .setThumbnail(message.author.avatarURL)
             .addField('Server Naam', message.guild.name, true)
             .addField('Server start datum', message.guild.createdAt, false)
             .addField('Jij bent gejoint op', message.guild.joinedAt, false)
             .addField('Aantal members', message.guild.memberCount, false)
             .setColor('#ff0000')
-            .setThumbnail(message.author.avatarURL)
-            .setFooter("door mijzelf")
+            .setFooter("door Kas")
 
         message.channel.sendEmbed(Server_Info);
         console.log("!serverinfo is geexecuteerd door" + message.author)

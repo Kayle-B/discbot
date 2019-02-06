@@ -24,12 +24,12 @@ class CoinFlipCommand extends commando.Command
             message.channel.sendEmbed(headsMsg);
         }
         else{
-            var headsMsg = new discord.RichEmbed()
+            var tailsMsg = new discord.RichEmbed()
             .setTitle("Het is munt!")
             .setDescription("Probeer het nog een keer met !flip.")
             .setThumbnail("https://upload.wikimedia.org/wikipedia/commons/5/5a/98_quarter_reverse.png")
             .setColor("#00870b")
-            message.channel.sendEmbed(headsMsg);
+            message.channel.sendEmbed(tailsMsg);
         }
     }
 }
