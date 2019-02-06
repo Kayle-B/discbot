@@ -39,15 +39,6 @@ bot.on('message', function(message){
     {
         message.channel.sendMessage('Hallo '+ message.author + ', Hoe gaat het? om te kijken in welk team je zit of er een aan te maken doe ?createteam of ?teams')
     }
-else if(message.content == 'Join')
-    {
-        message.member.send("Welcome to the server!");
-        message.member.send("For commands type: ?help") ;
-
-        let memberRole = message.member.guild.roles.find("name", "Member");
-        message.member.addRole(memberRole);
-    }
-
 });
 
 bot.on('ready', function(){
